@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>PET HOUSE</title>
+	<link rel="stylesheet" href="index_style.css" />
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#header img {
+  width: 160px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+  body {
+    background-image: url(paw.jpg) !important;
+}
+</style>
+</head>
+
+		<body>
+		
+				
+			
+				
+				
+				
+				<?php 
+				include("header_index.php");
+				include("mainbody.php");
+				
+				?>
+				
+			
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+				
+				
+				<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+}
+</script>
+
+
+				
+		</body>
+
+</html>
